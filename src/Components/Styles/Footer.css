@@ -1,0 +1,49 @@
+/* Footer.css */
+
+.Contain {
+  background-color: #171616; /* Dark background consistent with home page */
+  padding: 20px 0; /* Padding for the outer container */
+}
+
+.footerCon {
+  background-color: #2c3232; /* Dark background for the footer */
+  padding: 10px;
+  text-align: center;
+  color: #ffffff; /* White text color for better contrast */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Subtle box shadow for depth */
+}
+
+.img {
+  margin-bottom: 10px;
+}
+
+/* Improved text shadow for better readability */
+.footerCon span {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+/* Responsive Styling */
+@media (max-width: 576px) {
+  .footerCon {
+    padding: 15px; /* Adjusted padding for smaller screens */
+  }
+  .img {
+    margin-bottom: 5px; /* Reduced margin for smaller screens */
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .footerCon {
+    padding: 18px; /* Slightly adjusted padding for medium screens */
+  }
+}
+
+/* Larger screens */
+@media (min-width: 769px) {
+  .footerCon {
+    padding: 25px; /* Increased padding for larger screens */
+  }
+  .img {
+    margin-bottom: 15px; /* Increased margin for larger screens */
+  }
+}

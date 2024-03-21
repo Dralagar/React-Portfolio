@@ -1,0 +1,32 @@
+/* Contact.css */
+
+/* Dark black background color */
+.BG {
+  background-color: black;
+}
+
+/* Center the form and card in the container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh; /* Set the container height to the full viewport height */
+}
+
+/* Dark black background color for the card body */
+.card-body {
+  background-color: #000;
+  color: #c0c0c0; /* Silver text color */
+}
+
+/* Dark navy background color for the card */
+.card {
+  background-color: #000;
+  color: #c0c0c0; /* Silver text color */
+}
+
+/* Dark black background color for the button */
+.btn-primary {
+  background-color: #000;
+  border-color: #000;
+}

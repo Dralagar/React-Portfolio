@@ -1,0 +1,100 @@
+/* General styles */
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: #171616;
+  color: white;
+  text-align: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Header section styles */
+#description {
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  text-align: justify;
+}
+
+.name {
+  font-size: 60px;
+  font-weight: 600;
+  color: white;
+  text-align: justify;
+}
+
+#work {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: gold;
+  text-align: justify;
+}
+
+#experience {
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  text-align: justify;
+}
+
+/* Container and grid styles */
+.container {
+  padding: 20px; /* Adjust as needed */
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Image styles */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* About section styles */
+.about-container {
+  background-color: #e4e2e2;
+  padding: 20px; /* Adjust as needed */
+}
+
+.about {
+  margin-bottom: 20px; /* Add space between sections */
+}
+
+/* Skills section styles */
+.skill {
+  margin-top: 30px; /* Add space between sections */
+}
+
+.ut {
+  color: #3498db;
+  font-size: 24px;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.uti ul {
+  list-style-type: square;
+  margin-left: 20px;
+  display: flex;
+  color: silver;
+  align-items: normal;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .name {
+    font-size: 40px;
+  }
+
+  .ut {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+}

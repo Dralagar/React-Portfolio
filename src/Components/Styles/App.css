@@ -1,0 +1,29 @@
+/* Global styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  background-color: rgb(29, 28, 27); /* Set background color */
+  color: #333; /* Set default text color */
+}
+
+/* Breadcrumb styles */
+.breadcrumb {
+  background-color: transparent; /* Set breadcrumb background color */
+  padding: 0; /* Remove default padding */
+  margin-bottom: 1rem; /* Add some margin at the bottom */
+  list-style: none; /* Remove default list styles */
+}
+
+.breadcrumb-item {
+  display: inline-block; /* Make breadcrumb items inline */
+  margin-right: 0.5rem; /* Add some spacing between breadcrumb items */
+}
+
+.breadcrumb-item:last-child {
+  font-weight: bold; /* Make the last breadcrumb item bold */
+}
+
+.breadcrumb-item.active {
+  color: #777; /* Set color for active breadcrumb item */
+}

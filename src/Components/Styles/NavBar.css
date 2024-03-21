@@ -1,0 +1,76 @@
+/* Global styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+}
+
+/* Navbar styles */
+.Nav {
+  background-color: rgb(28, 28, 20);
+  padding: 10px;
+  animation: backwards;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(241, 241, 250);
+  text-wrap: 10px;
+}
+
+.Logos {
+  align-items: center;
+  text-decoration: none;
+  color: whitesmoke;
+  display: flex;
+}
+
+.logo_image {
+  height: 80px;
+  width: 100px;
+  transition: all;
+  transform: matrix3d();
+}
+
+.nav {
+  justify-content: space-evenly;
+}
+
+a {
+  padding: 10px;
+}
+
+/* Main content styles */
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.BG {
+  margin-top: 60px; /* Adjust this value based on your navbar height */
+  padding-bottom: 60px; /* Adjust this value based on your footer height */
+}
+
+.container.mt-5 {
+  color: blanchedalmond;
+  margin-top: 20px;
+  height: 100%;
+  min-height: 100vh;
+}
+
+.paper-background {
+  color: rgb(40, 37, 32);
+}
+
+.container {
+  color: #333;
+  background-color: rgb(29, 28, 27);
+}

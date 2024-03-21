@@ -1,0 +1,141 @@
+/* Portfolio.css */
+
+.backgr {
+  padding-top: 80px; /* Adjust this value based on your navbar height */
+  padding-bottom: 60px; /* Adjust this value based on your footer height */
+}
+
+.container {
+  margin: 20px;
+}
+
+.p {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.h {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.Card {
+  margin-bottom: 20px;
+  border: 1px solid #ddd; /* Add a border for a clean look */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
+}
+
+.Card h5 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.Card.Img {
+  width: 100%;
+  height: auto;
+}
+
+.Card.Body {
+  padding: 20px;
+}
+
+/* Responsive styles for cards */
+@media (max-width: 767px) {
+  .container {
+    margin: 10px;
+  }
+
+  .Card {
+    margin-bottom: 10px;
+  }
+
+  .h {
+    /* Portfolio.css */
+
+    .backgr {
+      padding-top: 80px; /* Adjust this value based on your navbar height */
+      padding-bottom: 60px; /* Adjust this value based on your footer height */
+    }
+
+    .container {
+      margin: 20px;
+    }
+
+    .p {
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .h {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .Card {
+      margin-bottom: 20px;
+      border: 1px solid #ddd; /* Add a border for a clean look */
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
+    }
+
+    .Card h5 {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .Card.Img {
+      width: 100%;
+      height: auto;
+    }
+
+    .Card.Body {
+      padding: 20px;
+    }
+
+    /* Responsive styles for cards */
+    @media (max-width: 767px) {
+      .container {
+        margin: 10px;
+      }
+
+      .Card {
+        margin-bottom: 10px;
+      }
+
+      .h {
+        margin-bottom: 20px;
+      }
+
+      .backgr {
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+    }
+
+    margin-bottom: 20px;
+  }
+}
+.project-container {
+  margin-top: 20px;
+}
+
+.project-card {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+  .project-container {
+    margin-top: 10px;
+  }
+
+  .project-card {
+    margin-bottom: 10px;
+  }
+}

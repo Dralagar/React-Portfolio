@@ -43,7 +43,7 @@ const MyProjectsSection = () => {
             Architecto, hic? Magnam eum error saepe doloribus corrupti
             repellat quisquam alias doloremque!
           </p>
-          <a href="https://kumbatiaafrica.netlify.app/">Read More</a>
+          <a href="">Read More</a>
         </div>
       </div>
       <div className="card" style={{ '--clr': '#03A9F4' }}>

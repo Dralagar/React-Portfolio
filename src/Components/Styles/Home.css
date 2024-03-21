@@ -213,7 +213,6 @@ textarea.form-control {
 .container .card .content a:hover {
   opacity: 0.8;
 }
-
 /* Updated contact form styles */
 .contact-form-container {
   max-width: 600px; /* Limit the width of the form */
@@ -222,7 +221,7 @@ textarea.form-control {
   background-color: #fff; /* White background */
   border-radius: 10px; /* Rounded corners */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-  overflow-y: auto; /* Enable vertical scrollbar */
+  overflow-y: hidden; /* Change to hidden to remove scrollbar */
 }
 
 .contact-form-container h1 {

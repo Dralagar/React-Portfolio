@@ -1,21 +1,24 @@
 .cvbody {
-  margin-left: 5px; /* Adjusted margin */
-  padding: 3px; /* Added padding */
+  margin-left: auto; /* Centering the entire content */
+  margin-right: auto; /* Centering the entire content */
+  padding: 20px; /* Added padding for spacing */
+  max-width: 800px; /* Limiting the width of the content */
 }
 
-.container {
-  background-color: white; /* Changed background color */
-  color: #333; /* Changed text color */
-  padding: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 800px; /* Centering the container */
+.Container {
+  background-color: #fff; /* Set background color */
+  color: #333; /* Set text color */
+  padding: 20px; /* Added padding */
+  margin: auto; /* Centering the container */
+  max-width: 800px; /* Limiting the width of the container */
+  border-radius: 10px; /* Added border radius for aesthetics */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Added shadow effect */
 }
 
 .paper-background {
-  background-color: #f8f9fa; /* Added a light background color */
-  border: 1px solid #ccc; /* Added a border */
-  padding: 20px;
+  background-color: #f8f9fa; /* Set background color */
+  border: 1px solid #ccc; /* Added border */
+  padding: 20px; /* Added padding */
   border-radius: 5px; /* Added border radius for aesthetics */
 }
 

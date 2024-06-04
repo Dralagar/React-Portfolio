@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
 /* Global styles */
 body {
   font-family: 'Poppins', sans-serif;
@@ -6,16 +7,14 @@ body {
   padding: 0;
   box-sizing: border-box;
   color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
   background: rgb(67, 69, 112);
 }
 
 /* Container styles */
 .BG {
   padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* Header styles */
@@ -28,10 +27,11 @@ body {
 
 /* About section styles */
 .about-container {
-  background-color: #191970;
+  background-color: #1a1a3d;
   margin-top: 40px;
   color: #fff;
   padding: 20px;
+  border-radius: 10px;
 }
 
 .about h2 {
@@ -39,14 +39,15 @@ body {
 }
 
 .about p {
-  font-size: 1em;
+  font-size: 1.1em;
+  color: #ddd;
 }
 
 /* Contact section styles */
 .card {
-  background-color: #191970;
+  background-color: #1a1a3d;
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   margin-top: 40px;
 }
@@ -59,10 +60,11 @@ body {
 
 .card-text {
   font-size: 1.2em;
+  color: #ddd;
 }
 
 .form-label {
-  color: #fff;
+  color: #ddd;
 }
 
 .form-control {
@@ -80,6 +82,8 @@ textarea.form-control {
 .btn {
   background-color: #ffd700;
   color: #111;
+  border: none;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .btn-primary:hover {
@@ -90,12 +94,34 @@ textarea.form-control {
 /* Additional styles */
 .About1 {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pt-3,
+.pt-5,
+.pl-3,
+.pr-3 {
+  padding-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .About1 {
+    flex-direction: row;
+    align-items: flex-start;
+  }
 }
 
 /* Responsive image */
 .about-image img {
   max-width: 100%;
   height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.about-image img:hover {
+  transform: scale(1.05);
 }
 
 /* Skill list styles */
@@ -126,20 +152,20 @@ textarea.form-control {
 /* Updated styles for project cards */
 .container {
   display: flex;
-  flex-wrap: nowrap; /* Ensures elements don't wrap to the next line */
-  overflow-x: auto; /* Allow horizontal scrolling if needed */
+  flex-wrap: nowrap;
+  overflow-x: auto;
   justify-content: center;
-  gap: 20px; /* Adjust spacing between cards */
-  padding: 20px; /* Adjust padding as needed */
+  gap: 20px;
+  padding: 20px;
 }
 
 .container .card {
-  flex: 0 0 auto; /* Prevent cards from shrinking or growing */
+  flex: 0 0 auto;
   width: 350px;
   height: 300px;
   background: #fff;
   border-radius: 20px;
-  transition: 0.5s;
+  transition: height 0.5s;
   box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
 }
 
@@ -155,12 +181,12 @@ textarea.form-control {
   background: #333;
   border-radius: 12px;
   overflow: hidden;
-  transition: 0.5s;
+  transition: top 0.5s, transform 0.5s, box-shadow 0.5s;
 }
 
 .container .card:hover .img-box {
   top: -100px;
-  scale: 0.75;
+  transform: scale(0.75);
   box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
 }
 
@@ -181,7 +207,7 @@ textarea.form-control {
   padding: 0 30px;
   text-align: center;
   overflow: hidden;
-  transition: 0.5s;
+  transition: top 0.5s, height 0.5s;
 }
 
 .container .card:hover .content {
@@ -192,11 +218,11 @@ textarea.form-control {
 .container .card .content h2 {
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--clr);
+  color: #1a1a3d;
 }
 
 .container .card .content p {
-  color: #333;
+  color: #666;
 }
 
 .container .card .content a {
@@ -205,7 +231,7 @@ textarea.form-control {
   display: inline-block;
   padding: 12px 25px;
   text-decoration: none;
-  background: var(--clr);
+  background: #1a1a3d;
   color: #fff;
   font-weight: 500;
 }
@@ -213,76 +239,155 @@ textarea.form-control {
 .container .card .content a:hover {
   opacity: 0.8;
 }
+
 /* Updated contact form styles */
 .contact-form-container {
-  max-width: 600px; /* Limit the width of the form */
-  margin: auto; /* Center the form horizontally */
-  padding: 20px; /* Add some padding for spacing */
-  background-color: #fff; /* White background */
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-  overflow-y: hidden; /* Change to hidden to remove scrollbar */
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow-y: hidden;
 }
 
 .contact-form-container h1 {
-  margin-bottom: 20px; /* Add some space below the heading */
+  margin-bottom: 20px;
 }
 
 .contact-form-container .card-text {
-  margin-bottom: 20px; /* Add some space below the text */
+  margin-bottom: 20px;
 }
 
 .contact-form-container label {
-  font-weight: bold; /* Make labels bold */
+  font-weight: bold;
 }
 
 .contact-form-container input,
 .contact-form-container textarea {
-  width: 100%; /* Take up full width */
-  padding: 10px; /* Add padding for better appearance */
-  margin-bottom: 15px; /* Add space between inputs */
-  border: 1px solid #ccc; /* Add a border */
-  border-radius: 5px; /* Rounded corners */
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 .contact-form-container textarea {
-  resize: vertical; /* Allow vertical resizing */
+  resize: vertical;
 }
 
 .contact-form-container button {
-  display: block; /* Make the button a block element */
-  width: 100%; /* Take up full width */
-  padding: 10px; /* Add padding for better appearance */
-  background-color: #007bff; /* Blue background */
-  color: #fff; /* White text */
-  border: none; /* Remove border */
-  border-radius: 5px; /* Rounded corners */
-  cursor: pointer; /* Add pointer cursor on hover */
-  transition: background-color 0.3s; /* Smooth transition */
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .contact-form-container button:hover {
-  background-color: #0056b3; /* Darker blue on hover */
+  background-color: #0056b3;
 }
 
 /* Media Queries */
-@media (max-width: 768px) {
-  .container .card
-  {
-    max-width: 90%; /* Adjust max-width for smaller screens */
+@media (max-width: 992
+px) {
+  .BG {
+    padding: 20px;
   }
-}
 
+  .about-container,
+  .card {
+    margin-top: 20px;
+  }
 
-@media (max-width: 480px) {
+  .About1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .container .card {
-    width: 230px;
-    border-radius: 15px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
   }
 
   .container .card .img-box {
-    width: 185px;
-    border-radius: 10px;
+    width: 100%;
+    height: auto;
+  }
+
+  .container .card .content {
+    position: relative;
+    top: auto;
+    height: auto;
+    padding: 20px;
+  }
+
+  .container .card .content h2 {
+    font-size: 1.2rem;
+  }
+
+  .container .card .content p {
+    font-size: 1rem;
+  }
+
+  .container .card .content a {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-image img {
+    max-width: 90%;
+    margin: auto;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-form-container {
+    padding: 15px;
+  }
+
+  .contact-form-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .contact-form-container input,
+  .contact-form-container textarea {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  .contact-form-container button {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .BG {
+    padding: 10px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .container .card {
+    width: 100%;
+    height: auto;
+  }
+
+  .container .card .content h2 {
+    font-size: 1rem;
   }
 
   .container .card .content p {
@@ -290,26 +395,26 @@ textarea.form-control {
   }
 
   .container .card .content a {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+    padding: 8px 15px;
   }
 
-  /* Additional styles for smaller screens */
   .contact-form-container {
-    padding: 15px; /* Reduce padding for smaller screens */
+    padding: 10px;
   }
 
   .contact-form-container h1 {
-    font-size: 1.5rem; /* Decrease font size of heading */
+    font-size: 1.2rem;
   }
 
   .contact-form-container input,
   .contact-form-container textarea {
-    padding: 8px; /* Reduce padding for inputs */
-    font-size: 0.9rem; /* Decrease font size of inputs */
+    padding: 6px;
+    font-size: 0.8rem;
   }
 
   .contact-form-container button {
-    padding: 8px; /* Reduce padding for button */
-    font-size: 0.9rem; /* Decrease font size of button */
+    padding: 6px;
+    font-size: 0.8rem;
   }
 }

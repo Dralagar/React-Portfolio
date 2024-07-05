@@ -31,7 +31,7 @@ function Contact() {
         <div className="card"><h1 className="card-title">Contact</h1>
           <div className="card-body">
             <p className="card-text">
-              Feel free to reach out and contact me! I'd love to hear from you.
+            Feel free to contact me! I'd love to hear from you.
             </p>
             <form
               action="https://formsubmit.co/8c1334f955f21f81b0a2bf6d1a1d526e"

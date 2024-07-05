@@ -8,7 +8,6 @@ import autoAnimate from '@formkit/auto-animate';
 import './Styles/Home.css';
 
 const SkillsSection = () => {
-  // Define an array of skills
   const skills = [
     'React.js',
     'Node.js',
@@ -24,11 +23,10 @@ const SkillsSection = () => {
     'GraphQL',
     'RESTful APIs',
     'Git',
-    // Add more skills as needed
   ];
 
   return (
-    <BootstrapContainer>
+    <BootstrapContainer className="BG container-skill">
       <div className="skill-section">
         <h2>Skills</h2>
         <ul className="skills-list">
@@ -45,38 +43,39 @@ const BlogSection = () => {
   const [blogContent, setBlogContent] = useState('');
 
   const handleNewBlog = () => {
-    // Logic to handle new blog post
-    // For example, you can fetch new blog content from an API
-    // and update the blogContent state
     const newBlogContent = 'New blog content goes here';
     setBlogContent(newBlogContent);
   };
 
   return (
-    <section className="blog-section">
-      <h2>Latest Blog</h2>
-      <div className="blog-content">
-        <p>{blogContent}</p>
-      </div>
-      <button onClick={handleNewBlog}>New Blog</button>
-    </section>
+    <BootstrapContainer className="BG container-blog">
+      <section className="blog-section">
+        <h2>Latest Blog</h2>
+        <div className="blog-content">
+          <p>{blogContent}</p>
+        </div>
+        <button onClick={handleNewBlog} className="btn btn-primary">
+          New Blog
+        </button>
+      </section>
+    </BootstrapContainer>
   );
 };
 
 const MyProjectsSection = () => {
   return (
-    <>
+    <BootstrapContainer className="BG container-projects">
       <h1>Projects</h1>
       <div className="container">
         {/* Your project cards */}
       </div>
-    </>
+    </BootstrapContainer>
   );
 };
 
 const TechStackSection = () => {
   return (
-    <BootstrapContainer className="tech-stack-section">
+    <BootstrapContainer className="BG container-tech-stack">
       <h2>Tech Stack</h2>
       <Row>
         <Col xs={12} md={6}>
@@ -111,7 +110,7 @@ function Home() {
 
   return (
     <>
-      <BootstrapContainer className="BG">
+      <BootstrapContainer className="BG container-hello">
         <Row>
           <Col xs={12} md={6} className="mb-2 pt-3">
             <h3 id="description">
@@ -149,7 +148,7 @@ function Home() {
 
       <SkillsSection />
 
-      <BootstrapContainer className="BG">
+      <BootstrapContainer className="BG container-about">
         <Row>
           <Col xs={12} md={6} className="mb-2 pt-3">
             <div className="text-center">
@@ -169,22 +168,6 @@ function Home() {
                 💡 Combining expertise in Political Science with tech enthusiasm, I promote digital livelihoods and advocate for sustainability, resilience, and an inclusive digital future.
               </p>
             </div>
-          </Col>
-        </Row>
-      </BootstrapContainer>
-
-      <BootstrapContainer className="BG">
-        <Row>
-          <Col xs={12} md={6} className="mb-2 pt-3">
-            <div className="about">
-              <h2>About</h2>
-              <p>
-                I am a dedicated web developer with a focus on creating responsive and user-friendly web applications. My aim is to deliver effective solutions that elevate user experiences.
-              </p>
-            </div>
-          </Col>
-          <Col xs={12} md={6} className="pt-5">
-            <img src={aboutImage} alt="George" className="img-fluid" />
           </Col>
         </Row>
       </BootstrapContainer>

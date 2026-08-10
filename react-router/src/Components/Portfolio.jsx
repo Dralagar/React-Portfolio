@@ -1,13 +1,14 @@
-import React from "react";
-import { Container, Row, Col, Card } from "react-bootstrap"; // Import necessary components from react-bootstrap
+import { Container, Row, Col, Card } from "react-bootstrap";
 import rhinoImage from "./Styles/rhino (1).jpeg";
 import yeiImage from "../assets/YEI.jpg";
 import "./Styles/Portfolio.css";
 
 function Portfolio() {
   return (
-    <Container>
-      <Row className="project-container">
+    <div className="portfolio-page">
+      <Container>
+        <h1 className="card-title mb-4">Projects</h1>
+        <Row className="project-container">
         {/* Project 1 */}
         <Col lg={4} md={6} sm={12}>
           <Card className="project-card">
@@ -53,8 +54,9 @@ function Portfolio() {
             </Card.Body>
           </Card>
         </Col>
-      </Row>
-    </Container>
+        </Row>
+      </Container>
+    </div>
   );
 }
 

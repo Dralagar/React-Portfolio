@@ -1,26 +1,26 @@
-import Link from "./Link";
+import { NavLink } from "react-router-dom";
 import "./Components/Styles/NavBar.css";
 
 function NavBar() {
   return (
     <div className="Nav">
       <nav>
-        <Link to="/" className="Logos">
+        <NavLink to="/" className="Logos">
           Dralagar.
-        </Link>
+        </NavLink>
         <div className="nav-links">
-          <Link to="/" className="nav-link">
+          <NavLink to="/" className="nav-link">
             Home
-          </Link>
-          <Link to="/Portfolio" className="nav-link">
+          </NavLink>
+          <NavLink to="/Portfolio" className="nav-link">
             Portfolio
-          </Link>
-          <Link to="/CV" className="nav-link">
+          </NavLink>
+          <NavLink to="/CV" className="nav-link">
             Resume
-          </Link>
-          <Link to="/Contact" className="nav-link">
+          </NavLink>
+          <NavLink to="/Contact" className="nav-link">
             Contact
-          </Link>
+          </NavLink>
         </div>
       </nav>
     </div>

@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Legacy Vite portfolio app, linted by its own config.
+    "react-router/**",
   ]),
 ]);
 

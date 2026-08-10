@@ -1,11 +1,9 @@
-import React from "react";
-import { Container } from "react-bootstrap";
 import "./Styles/CV.css";
-function CV() {
+
+export default function CV() {
   return (
     <div className="cvbody">
-    
-      <div className="Container">
+      <div className="cv-container">
         <div className="paper-background">
           <header id="info">
             <div className="left">
@@ -35,11 +33,11 @@ function CV() {
               </div>
               <div className="right">
                 <p>
-                  I'm a self-motivated political scientist, youth advocate, and
+                  I&apos;m a self-motivated political scientist, youth advocate, and
                   web developer from Nairobi, Kenya. With a degree in political
                   science and sociology, I excel in communication, advocacy,
                   public speaking, research, political analysis, strategy
-                  development, and project implementation. I'm skilled in
+                  development, and project implementation. I&apos;m skilled in
                   proposal writing and blogging, offering a diverse skill set
                   and a commitment to excellence.
                 </p>
@@ -51,19 +49,26 @@ function CV() {
                 <h3>Skills</h3>
               </div>
               <div className="right">
+                <h4>Web Technologies:</h4>
                 <ul>
-                  <h3>Web Technologies:</h3>
+                  <li>HTML</li>
                   <li>CSS</li>
                   <li>JavaScript (ES6+)</li>
-                  <h3>Front-end Frameworks/Libraries:</h3>
+                </ul>
+                <h4>Front-end Frameworks/Libraries:</h4>
+                <ul>
                   <li>React.js</li>
                   <li>Bootstrap</li>
                   <li>Tailwind CSS</li>
                   <li>Next.js</li>
-                  <h3>Back-end Technologies:</h3>
+                </ul>
+                <h4>Back-end Technologies:</h4>
+                <ul>
                   <li>Node.js</li>
                   <li>PHP</li>
-                  <h3>Database Management:</h3>
+                </ul>
+                <h4>Database Management:</h4>
+                <ul>
                   <li>MongoDB</li>
                   <li>Firebase</li>
                   <li>MySQL</li>
@@ -125,5 +130,3 @@ function CV() {
     </div>
   );
 }
-
-export default CV;

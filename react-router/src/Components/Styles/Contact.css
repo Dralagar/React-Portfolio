@@ -1,32 +1,28 @@
 /* Contact.css */
 
-/* Dark black background color */
-.BG {
-  background-color: black;
-}
-
-/* Center the form and card in the container */
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 90vh; /* Set the container height to the full viewport height */
-}
-
-/* Dark black background color for the card body */
-.card-body {
+.contact-page {
   background-color: #000;
-  color: #c0c0c0; /* Silver text color */
+  padding: 40px 15px;
 }
 
-/* Dark navy background color for the card */
-.card {
+.contact-page .card {
+  max-width: 700px;
+  margin: 0 auto;
   background-color: #000;
-  color: #c0c0c0; /* Silver text color */
+  border-color: #333;
+  color: #f1f1f1;
 }
 
-/* Dark black background color for the button */
-.btn-primary {
+.contact-page .card-body {
   background-color: #000;
-  border-color: #000;
+  color: #f1f1f1;
+}
+
+.contact-page .form-label {
+  color: #f1f1f1;
+}
+
+.contact-page .btn-primary {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
 }

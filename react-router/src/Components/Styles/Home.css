@@ -1,60 +1,63 @@
 /* Home Page Styles */
-.description {
+.home-page .description {
   font-size: 16px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
-  text-align: justify;
 }
 
-.name {
-  font-size: 60px; /* Add 'px' unit */
+.home-page .name {
+  font-size: 60px;
   font-family: rubik, sans-serif;
   font-weight: 600;
   color: white;
-  text-align: justify;
 }
 
-.work {
+.home-page .work {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: gold;
-  text-align: justify;
 }
 
-.experience {
+.home-page .experience {
   font-size: 15px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
-  text-align: justify;
 }
 
-/* Additional Styles */
-.about {
-  padding: 0;
-}
-
-.uti {
-  display: flex;
-}
-
-.BG {
+.home-page .BG {
   background-color: black;
-  padding: inherit;
+  padding: 20px 15px;
 }
 
-.card-body {
-  background-color: #000;
-  color: #fff; /* Change to white text color */
+.home-page,
+.home-page .home,
+.home-page .about,
+.home-page .skill {
+  color: white;
 }
 
-.card {
-  background-color: #000;
-  color: #fff; /* Change to white text color */
+.home-page .skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
-.btn-primary {
+.home-page .skills-list img {
+  width: 20px;
+  height: auto;
+  margin-left: 4px;
+}
+
+.home-page .card,
+.home-page .card-body {
   background-color: #000;
-  border-color: #fff; /* Change to white border color */
-  color: #fff; /* Change to white text color */
+  color: #fff;
+}
+
+.home-page .form-label {
+  color: #fff;
 }
 
 /* Smooth Scroll */
@@ -79,10 +82,8 @@ html {
   background: #555;
 }
 
-/* Set body text color to white for all elements */
-.home,
-.about,
-.skill,
-.card-body {
-  color: white;
+@media (max-width: 767px) {
+  .home-page .name {
+    font-size: 40px;
+  }
 }
